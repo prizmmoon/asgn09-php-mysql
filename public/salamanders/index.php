@@ -25,7 +25,7 @@
         <th>&nbsp;</th>
   	  </tr>
 
-      <?php foreach($salamanders as $salamander) { ?>
+      <?php while($salamander = mysqli_fetch_assoc($salamander_set)) { ?>
         <tr>
           <td><?php echo h($salamander['id']); ?></td>
           <td><?php echo h($salamander['position']); ?></td>
