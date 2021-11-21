@@ -2,13 +2,6 @@
 
 <?php
   $salamander_set = find_all_salamanders();
-
-  $salamanders = [
-    ['id' => '1', 'position' => '1', 'visible' => '1', 'salamanderName' => 'Red-Legged Salamander'],
-    ['id' => '2', 'position' => '2', 'visible' => '1', 'salamanderName' => 'Pigeon Mountain Salamander'],
-    ['id' => '3', 'position' => '3', 'visible' => '1', 'salamanderName' => 'ZigZag Salamander'],
-    ['id' => '4', 'position' => '4', 'visible' => '1', 'salamanderName' => 'Slimy Salamander'],
-  ];
 ?>
 
 <?php $page_title = 'Salamanders'; ?>
