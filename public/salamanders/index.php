@@ -25,14 +25,14 @@
         <th>&nbsp;</th>
   	  </tr>
 
-      <?php foreach($pages as $page) { ?>
+      <?php foreach($salamanders as $salamander) { ?>
         <tr>
-          <td><?php echo h($page['id']); ?></td>
-          <td><?php echo h($page['position']); ?></td>
-          <td><?php echo $page['visible'] == 1 ? 'true' : 'false'; ?></td>
-    	    <td><?php echo h($page['salamanderName']); ?></td>
-          <td><a class="action" href="<?php echo url_for('salamanders/show.php?id=' . h(u($page['id']))); ?>">View</a></td>
-          <td><a class="action" href="<?php echo url_for('salamanders/edit.php?id=' . h(u($page['id']))); ?>">Edit</a></td>
+          <td><?php echo h($salamander['id']); ?></td>
+          <td><?php echo h($salamander['position']); ?></td>
+          <td><?php echo $salamander['visible'] == 1 ? 'true' : 'false'; ?></td>
+    	    <td><?php echo h($salamander['salamanderName']); ?></td>
+          <td><a class="action" href="<?php echo url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
+          <td><a class="action" href="<?php echo url_for('salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
           <td><a class="action" href="">Delete</a></td>
     	  </tr>
       <?php } ?>
