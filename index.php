@@ -11,8 +11,9 @@
     <main>
         <section id="assignments">  
         <ul>
-           <li> <a href="asgn06/public/">asgn06</a></li>
-           <li> <a href="asgn07-new-edit/public/salamanders">asgn07</a></li>
+           <li><a href="asgn06/public/">asgn06</a></li>
+           <li><a href="asgn07-new-edit/public/salamanders">asgn07</a></li>
+           <li><a href="asgn09-php-mysql/public/salamanders">asgn09</a></li>
         </ul>
         </section>
     </main>
