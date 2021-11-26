@@ -11,7 +11,7 @@
     <h1>Salamanders</h1>
 
     <div class="actions">
-      <a class="action" href="<?php echo url_for('salamanders/create.php'); ?>">Create Salamander</a>
+      <a class="action" href="<?= url_for('salamanders/create.php'); ?>">Create Salamander</a>
     </div>
 
   	<table class="list">
@@ -27,12 +27,12 @@
 
       <?php while($salamander = mysqli_fetch_assoc($salamander_set)) { ?>
         <tr>
-          <td><?php echo h($salamander['id']); ?></td>
-          <td><?php echo h($salamander['position']); ?></td>
-          <td><?php echo $salamander['visible'] == 1 ? 'true' : 'false'; ?></td>
-    	    <td><?php echo h($salamander['salamanderName']); ?></td>
-          <td><a class="action" href="<?php echo url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
-          <td><a class="action" href="<?php echo url_for('salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
+          <td><?= h($salamander['id']); ?></td>
+          <td><?= h($salamander['position']); ?></td>
+          <td><?= $salamander['visible'] == 1 ? 'true' : 'false'; ?></td>
+    	    <td><?= h($salamander['salamanderName']); ?></td>
+          <td><a class="action" href="<?= url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
+          <td><a class="action" href="<?= url_for('salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
           <td><a class="action" href="">Delete</a></td>
     	  </tr>
       <?php } ?>
