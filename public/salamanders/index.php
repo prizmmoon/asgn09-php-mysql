@@ -17,9 +17,9 @@
   	<table class="list">
   	  <tr>
         <th>ID</th>
-        <th>Position</th>
-        <th>Visible</th>
-  	    <th>Name</th>
+        <th>Name</th>
+        <th>Habitat</th>
+  	    <th>Description</th>
   	    <th>&nbsp;</th>
   	    <th>&nbsp;</th>
         <th>&nbsp;</th>
